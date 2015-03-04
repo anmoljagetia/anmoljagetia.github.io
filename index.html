@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body style="display:none;">
 <section id="home" class="">
   <div class="container">
     <div class="row">
@@ -73,13 +73,12 @@
     </div>
   </div>
 </section>
-<script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.min.js"></script> 
 <script src="js/morphext.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
 <script type="text/javascript">
-  $('#body').hide();
   $(document).ready(function() {
-      $('#body').show();
+      $('body').show();
       $("#js-rotating").Morphext({
           // The [in] animation type. Refer to Animate.css for a list of available animations.
           animation: "flipInX",
